@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #111;
+}
+
+.video_wrapper {
+    margin: 0%; 
+    }
+
+video {
+    display: inline-block;
+    max-width: 100%;
+}
+
+p {
+    display: inline-block;
+    margin: 20px;
+}
+
+.highlighted {
+    color: #FFB90F;
+}
+
+/*-- Adjust wrapper widths for lager screens --*/
+
+@media (min-width: 768px){
+    
+    .video_wrapper {
+    margin: 2% 15%; 
+    }
+    
+    .wrapper {
+       margin: 0% 12%;
+    }
+}
