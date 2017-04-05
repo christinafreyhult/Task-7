@@ -21,7 +21,7 @@ let text16 = document.getElementById("sub-16");
 
 /* ---------- Run the function as long as the video is playing ---------- */
 
-myVid.ontimeupdate = function() {myFunction()};
+myVid.ontimeupdate = function() {myFunction();};
 
 
 /*-- Remove any old highlights, either from the progress of the video or jumps in the timeline --*/
@@ -33,11 +33,13 @@ function clearHighlights(){
     }
 }
 
+
 /*-- Check what the current video time is and highlight the corresponding text --*/
 
 function myFunction(){
        
     vidTime = myVid.currentTime;
+    
     
         if(vidTime>0.0001 && vidTime<4.13){
             clearHighlights();
@@ -102,5 +104,5 @@ function myFunction(){
         if(vidTime>57.78 && vidTime<100.15){
             clearHighlights();
             text16.className = "highlighted";
-        }
+        } 
 }
